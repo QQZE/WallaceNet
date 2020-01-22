@@ -1,0 +1,46 @@
+/* Font for Wallace Net logo */
+@font-face {
+    font-family: "Harvard";
+    src: url("font.ttf") format("truetype");
+}
+/* Display for Wallace Net logo */
+.titletext, .interactive-logo{
+    color:ivory;
+    text-align: center;
+    font-family:"Harvard";
+    font-size: 900%;
+}
+
+h2 {
+  font-family: Harvard;
+  color: ivory;
+  font-size: 40px;
+}
+
+.link{
+    color:ivory;
+}
+
+/* removes underline on clickable logo's */
+.interactive-logo{
+    text-decoration: none;
+}
+/* Changes footer colour, font and positioning */
+footer{
+    color: ivory;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    right: 5px;
+    z-index: 1;
+}
+/*logo colour and positioning settings*/
+.settings{
+    float:right;
+    width: 60px;
+    display:inline;
+}
+/*floating trademark to left*/
+footer p{
+    float: left
+}

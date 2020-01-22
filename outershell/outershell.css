@@ -1,0 +1,14 @@
+body {
+  background-color: darkblue;
+  text-align: center;
+}
+
+button, input, select {
+  width: 200px;
+  height: 30px;
+  text-align: inherit;
+}
+
+button {
+  background-color: lightgray;
+}

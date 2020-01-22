@@ -1,0 +1,130 @@
+/* Setting colour to blue and centering text for all inner pages */
+body{
+    background-color: steelblue;
+    text-align: center;
+}
+.schoollogo{
+    height: 100px;
+    width: 100px;
+}
+.welcome, .date{
+    width: 400px;
+    font-family: monospace;
+    color: ivory;
+    font-size: 25px;
+}
+
+.welcome{
+    padding-left: 100px;
+    float: left;
+}
+
+.date{
+    float: right;
+}
+
+header{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    clear: both;
+    color: ivory;
+    vertical-align: middle;
+}
+
+
+div[id*="grid-container"], #addsubject{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    }
+
+div[id*="grid-container"] h1, #addsubject h1{
+    background-color: #f28500;
+    width: inherit;
+    height: inherit;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 350px;
+    font-family: monospace;
+}
+
+div[id*="links"]{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    font-family: monospace;
+    font-size: 30px;
+    text-align: inherit;
+    background-color: lightgray;
+}
+
+div[id*="text"] a{
+    display: inline-block; 
+    color: blueviolet;
+    padding: 15px;
+}
+
+div[id*="text"] a:hover{
+    background-color: orange;
+}
+
+div[id*="grid-container"]:hover div[id*="links"] {
+    opacity: 1;
+}
+
+/* settings page */
+#DeleteUser, #EditInfo, #ResetPassword{
+    display: none;
+    background-color: ivory;
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+button[id*="delete"] {
+    background-color: Transparent;
+    border: none;
+    height: 0px;
+    width: 0px;
+}
+
+button, input{
+    height:40px;
+    width:200px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;}
+    div[id*="grid-container"] h1{
+        font-size: 50px;
+    }
+    .welcome, .date{
+        width: auto;
+    }
+    .schoollogo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .welcome, .date{
+        text-align: center;
+    }
+}
